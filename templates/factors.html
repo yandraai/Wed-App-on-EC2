@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %} Home Page {% endblock %}
+
+{% block body %}
+<div align='left'>
+The factors of {{ number }} are:
+
+  {% for factor in factors %}
+  <font size=6> <li>{{ factor }}</li></font>
+  {% endfor %}
+</div>
+{% endblock %}
